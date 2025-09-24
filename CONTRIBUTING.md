@@ -37,9 +37,6 @@ The backend is powered by the **Ballerina Language Server**:
 git clone https://github.com/wso2/vscode-extensions.git
 cd vscode-extensions
 
-# Initialize git submodules (required for grammar files)
-pnpm run init-submodules
-
 # Install dependencies
 rush install
 
@@ -104,12 +101,9 @@ npm run e2e-test
    - Update documentation for public APIs
    - Test with VS Code Extension Development Host
 5. **Testing Requirements**:
-   - Unit tests must pass: `pnpm run test`
-   - Linting must pass: `pnpm run lint`
-   - E2E tests for UI changes: `pnpm run e2e-test`
+   - E2E tests for UI changes: `npm run e2e-test`
 6. **Build and Package**:
    - Verify build success: `rush build --to ballerina`
-   - Test extension packaging: `pnpm run package`
 7. **Submit** a pull request to the main repository
 
 #### Backend Contributions
