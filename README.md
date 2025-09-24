@@ -24,6 +24,15 @@ See the following topics to get started with the product:
 - [Quick start guide](https://bi.docs.wso2.com/get-started/quick-start-guide/)
 - [Tutorials](https://bi.docs.wso2.com/learn/message-transformation/)
 
+## Contributing
+
+We welcome contributions to WSO2 Ballerina Integrator! Please see our [Contributing Guide](CONTRIBUTING.md) for detailed information on:
+
+- How to report issues and feature requests
+- Frontend development setup and guidelines
+- Backend development contributions
+- Development best practices and architecture
+
 ## Report product issues
 
 ### Open an issue

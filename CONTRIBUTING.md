@@ -136,10 +136,8 @@ npm run e2e-test
 - **Event System**: Implement proper event handling and cleanup
 
 #### Testing Strategy
-- **Unit Tests**: Test individual components and utilities
-- **Integration Tests**: Test component interactions and RPC communication
+- **Unit Tests**: Test individual components and utilities in the language server
 - **E2E Tests**: Test complete user workflows in VS Code
-- **Performance Tests**: Validate responsiveness with large projects
 
 ### Architecture Guidelines
 
