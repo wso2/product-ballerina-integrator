@@ -1,10 +1,10 @@
-# Contributing to WSO2 Ballerina Integrator
+# Contributing to WSO2 Integrator: BI
 
-Thank you for your interest in contributing to WSO2 Ballerina Integrator! This guide will help you understand how to contribute to different parts of the project.
+Thank you for your interest in contributing to WSO2 Integrator: BI! This guide will help you understand how to contribute to different parts of the project.
 
 ## Repository Overview
 
-This repository (`product-ballerina-integrator`) is primarily used for **issue tracking** for the WSO2 Ballerina Integrator product. The actual development happens in separate repositories:
+This repository (`product-ballerina-integrator`) is primarily used for **issue tracking** for the WSO2 Integrator: BI product. The actual development happens in separate repositories:
 
 ### Frontend Development
 The frontend code is located in the **WSO2 VS Code Extensions monorepo**:
@@ -24,10 +24,7 @@ The backend is powered by the **Ballerina Language Server**:
 ## Development Setup
 
 ### Prerequisites
-- **Node.js**: >=20.0.0 <23.0.0
-- **Package Manager**: Rush.js with pnpm
-- **VS Code**: Minimum version 1.83.1
-- **Git**: For submodule management
+Recommended to refer the https://github.com/wso2/vscode-extensions/#prerequisites for frontend prerequisites (including Node.js >= 22 and Rush CLI installation) and for the backend refer to the [Ballerina Language Server repository](https://github.com/ballerina-platform/ballerina-language-server) for setup instructions. 
 
 ### Frontend Development Setup
 
@@ -36,6 +33,9 @@ The backend is powered by the **Ballerina Language Server**:
 # Clone the repository
 git clone https://github.com/wso2/vscode-extensions.git
 cd vscode-extensions
+
+# Install Rush CLI globally (if not already installed)
+npm install -g @microsoft/rush
 
 # Install dependencies
 rush install
@@ -49,7 +49,7 @@ rush build
 - **Visual Components**: `workspaces/ballerina/ballerina-visualizer/`
 - **Core Libraries**: `workspaces/ballerina/ballerina-core/`
 - **RPC Client**: `workspaces/ballerina/ballerina-rpc-client/`
-- **Diagram Components**: `workspaces/ballerina/sequence-diagram/`, `type-diagram/`, etc.
+- **Diagram Components**: `workspaces/ballerina/sequence-diagram/`, `workspaces/ballerina/type-diagram/`, etc.
 - **BI Workspace**: `workspaces/bi/`
 
 #### Development Commands
@@ -68,6 +68,16 @@ npm run e2e-test
 
 ### Backend Development Setup
 
+#### Initial Setup
+```bash
+# Clone the language server repository
+git clone https://github.com/ballerina-platform/ballerina-language-server.git
+cd ballerina-language-server
+
+# Follow the build instructions in the repository
+# Typically involves Java development environment setup
+```
+
 #### Language Server Features
 - **Auto Completion**: Context-aware code completion
 - **Hover Provider**: Type information and documentation
@@ -75,7 +85,7 @@ npm run e2e-test
 - **Go to Definition**: Navigate to symbol definitions
 - **Diagnostics**: Real-time error and warning reporting
 - **Code Actions**: Quick fixes and refactoring suggestions
-- **Goto Implementation**: Find interface implementations
+- **Go to Implementation**: Find interface implementations
 
 ## How to Contribute
 
@@ -99,7 +109,7 @@ npm run e2e-test
    - Implement proper error handling and logging
    - Write unit tests for new functionality
    - Update documentation for public APIs
-   - Test with VS Code Extension Development Host
+   - Test with VS Code Extension Development Host (select `Ballerina & BI Extensions` from the debug menu and run it to view the extension development host)
 5. **Testing Requirements**:
    - E2E tests for UI changes: `npm run e2e-test`
 6. **Build and Package**:
@@ -164,11 +174,11 @@ Documentation contributions are welcome! Please check the respective repositorie
 
 ## Code of Conduct
 
-Please note that this project follows WSO2's Code of Conduct. By participating in this project, you agree to abide by its terms.
+Please note that this project follows WSO2's [Code of Conduct](https://wso2.com/code-of-conduct/). By participating in this project, you agree to abide by its terms.
 
 ## License
 
-By contributing to WSO2 Ballerina Integrator, you agree that your contributions will be licensed under the Apache License 2.0.
+By contributing to WSO2 Integrator: BI, you agree that your contributions will be licensed under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
 
 ---
 
