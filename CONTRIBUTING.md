@@ -111,6 +111,7 @@ cd ballerina-language-server
    - Update documentation for public APIs
    - Test with VS Code Extension Development Host (select `Ballerina & BI Extensions` from the debug menu and run it to view the extension development host)
 5. **Testing Requirements**:
+   - Navigate to `workspaces/bi/bi-extension`
    - E2E tests for UI changes: `npm run e2e-test`
 6. **Build and Package**:
    - Verify build success: `rush build --to ballerina`
